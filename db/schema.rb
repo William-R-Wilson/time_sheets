@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150308155119) do
+ActiveRecord::Schema.define(version: 20150309011933) do
 
   create_table "employees", force: true do |t|
     t.boolean  "clocked_in"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150308155119) do
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "employee_number"
   end
 
 end

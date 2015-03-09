@@ -1,0 +1,20 @@
+<h1>Edit employees</h1>
+<div>
+    <%= form_for(Employee.new) do |f| %>
+        <div>
+            <%= @employee.first_name %>.  Change to: 
+            <%= f.label :first_name %>
+            <%= f.text_field :first_name %>
+        </div>
+        
+        <div>
+            <%= @employee.last_name %>.  Change to: 
+            <%= f.label :last_name %>
+            <%= f.text_field :last_name %>
+        </div>
+        
+        <div>
+            <%= f.submit %>
+        </div>
+   <% end %>
+</div>
