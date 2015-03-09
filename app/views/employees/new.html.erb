@@ -1,0 +1,18 @@
+<h1>Add Employee</h1>
+<div>
+    <%= form_for(Employee.new) do |f| %>
+        <div>
+            <%= f.label :first_name %>
+            <%= f.text_field :first_name %>
+        </div>
+        
+        <div>
+            <%= f.label :last_name %>
+            <%= f.text_field :last_name %>
+        </div>
+        
+        <div>
+            <%= f.submit %>
+        </div>
+   <% end %>
+</div>

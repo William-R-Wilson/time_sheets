@@ -1,0 +1,10 @@
+<h1>All Employees</h1>
+<div>
+   <ul>
+   <% @employees.each do |s| %>
+       <li><%= s.last_name %>,  <%= s.first_name %> | <%= s.id %></li>
+   <% end %>
+   </ul>
+    
+    
+</div>
