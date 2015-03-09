@@ -1,20 +1,30 @@
 <h1>Edit employees</h1>
+
+<div>Edit employee:</div>
+<div><%= @employee.first_name %> <%= @employee.last_name %>
+ID: <%= @employee.employee_number %> </div>
+
 <div>
-    <%= form_for(Employee.new) do |f| %>
+    <%= form_for(@employee) do |f| %>
         <div>
-            <%= @employee.first_name %>.  Change to: 
             <%= f.label :first_name %>
             <%= f.text_field :first_name %>
         </div>
         
         <div>
-            <%= @employee.last_name %>.  Change to: 
             <%= f.label :last_name %>
             <%= f.text_field :last_name %>
         </div>
         
         <div>
-            <%= f.submit %>
+            <%= f.label :employee_number %>
+            <%= f.text_field :employee_number %>
+        </div>
+        
+        
+        
+        <div>
+            <%= f.submit "Save Changes" %>
         </div>
    <% end %>
 </div>

@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class = "navbar"><%= link_to employees_url, "All Employees" %> | <% link_to new_employee_url, "Create a new employee" %> </div>
 <%= yield %>
 
 </body>
