@@ -2,7 +2,9 @@
 <div>
    <ul>
    <% @employees.each do |s| %>
-       <li><%= s.last_name %>,  <%= s.first_name %> | <%= s.id %></li>
+       <li><%= s.last_name %>,  <%= s.first_name %> | <%= s.employee_number %>
+                              <div class = "edit"><%= link_to "Edit", edit_employee_path(s) %>, 
+                              <%= link_to "Delete", s, method: :delete, data: {confirm: "Are you sure?" } %></div></li>
    <% end %>
    </ul>
     
