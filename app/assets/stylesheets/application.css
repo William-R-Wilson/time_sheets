@@ -15,5 +15,11 @@
  */
  
  .navbar {
-     float: left;
+    float: left;
+ }
+ 
+ .header {
+    padding: 2%;
+    
+    text-align: left;
  }
