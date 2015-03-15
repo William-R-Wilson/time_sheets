@@ -5,6 +5,7 @@ Next steps:
 -add ability to clock in and out for each employee
 -add company.  Company has_many employees, has_secure_password
 -add login/logout function for company
+-add responsive css
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
